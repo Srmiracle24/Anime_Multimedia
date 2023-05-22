@@ -23,29 +23,67 @@
   }
   
   /* Header */
-  header {
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  nav ul {
-    display: flex;
-  }
-  
-  nav li {
-    margin-right: 20px;
-  }
-  
-  .login a {
-    margin-left: 20px;
-  }
+header {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+.logo img {
+  max-width: 50px; /* Ajusta el tamaño máximo del logo */
+  height: auto; /* Permite que la altura se ajuste proporcionalmente */
+}
+
+.login {
+  margin-left: 20px;
+}
+
+.login a {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #00bcd4;
+  color: #fff;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  border-radius: 10px;
+  font-size: 16px; /* Ajusta el tamaño de la fuente */
+}
+
+.nav-link {
+  font-family: Arial, sans-serif; /* Cambia la fuente de los elementos con la clase "nav-link" */
+  font-size: 25px; /* Ajusta el tamaño de la fuente */
+  color: #00bcd4; /* Agrega el color de texto inicial */
+  transition: color 0.3s ease-in-out; /* Agrega la transición de color */
+}
+
+.nav-link:hover {
+  color: #ff9800; /* Cambia el color de texto al pasar el mouse */
+}
+
+
+
+.login a:hover {
+  background-color: #ff9800;
+  transform: scale(1.1);
+}
   
 
   /* Main */

@@ -191,6 +191,10 @@ nav li {
         align-items: center;
     }
     
+    section .image-wrapper {
+        position: relative; /* Agrega posición relativa al contenedor */
+    }
+    
     section img {
         width: 100%;
         height: auto;
@@ -203,10 +207,45 @@ nav li {
     }
     
     section .image-caption {
-        color: #333;
+        position: absolute; /* Agrega posición absoluta */
+        top: 0; /* Ajusta la posición superior */
+        left: 0; /* Ajusta la posición izquierda */
+        width: 100%; /* Ajusta el ancho al 100% del contenedor */
+        background-color: rgba(0, 0, 0, 0.7); /* Agrega un fondo semi-transparente */
+        color: #fff; /* Color del texto */
         font-size: 14px;
-        margin-bottom: 10px;
+        margin: 0;
+        padding: 5px 10px;
     }
+    section .image-wrapper {
+        position: relative;
+        display: inline-block;
+      }
+      
+      section .image-wrapper:hover .image-caption {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      
+      section .image-caption {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background-color: rgba(0, 0, 0, 0.7);
+        color: #fff;
+        font-size: 14px;
+        padding: 5px 10px;
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+      }
+      .titulo_anime {
+        display:flex;
+        font-weight: bold;
+        color: #ff9800;
+        font-size: 20px;
+      }      
+    
     .pagination {
         margin-top: 20px;
         text-align: center;
