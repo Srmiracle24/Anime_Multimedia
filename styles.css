@@ -48,6 +48,32 @@ nav li {
     margin-right: 20px;
 }
 
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+  }
+  
+  .search-bar input {
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  .search-bar button {
+    padding: 6px 10px;
+    background-color: #00bcd4;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .search-bar button:hover {
+    background-color: #ff9800;
+  }
+
 .logo img {
     max-width: 50px; /* Ajusta el tamaño máximo del logo */
     height: auto; /* Permite que la altura se ajuste proporcionalmente */
